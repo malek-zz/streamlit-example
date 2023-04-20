@@ -20,10 +20,10 @@ files =['Corporate Social Responsibility Policy.pdf','Standard Corporate Social 
        'Environment Protection Program Policy.pdf','Work Health and Safety Culture Policy.pdf','Client Complaint Management Policy.pdf',
        'Basic Complaint Management Policy.pdf','Anti-Harassement Policy and Procedure.pdf','General Information Technology Policy.pdf','Nondiscrimination Policy.pdf',
        'Air - Environment protection policy.docx']
-
+cols = st.columns([0.3,8,3,3])
 for i in files:
-    cols = st.columns([0.3,8,3,3])
-    cols[0].image(pdf,width=10)
+ 
+    cols[0].image(pdf)
     cols[1].write(i)
     cols[2].write('x')
     cols[3].write('x')
