@@ -37,4 +37,4 @@ for i in files:
     cols[2].write('VIEW|ANALYSE')
     cols[3].write('x')
     cols[4].write('x')
-st.button("ANAYLSE')
+st.button('ANAYLSE')
