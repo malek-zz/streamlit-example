@@ -1,32 +1,14 @@
 import streamlit as st
 
-# Store the initial value of widgets in session state
-if "visibility" not in st.session_state:
-    st.session_state.visibility = "visible"
-    st.session_state.disabled = False
-
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.checkbox("Disable text input widget", key="disabled")
-    st.radio(
-        "Set text input label visibility 👉",
-        key="visibility",
-        options=["visible", "hidden", "collapsed"],
-    )
-    st.text_input(
-        "Placeholder for the other text input widget",
-        "This is a placeholder",
-        key="placeholder",
-    )
+   st.header("Documents")
+   st.text_area("Test1","","Model Sexual Harassment Policy.pdf")
 
 with col2:
-    text_input = st.text_input(
-        "Enter some text 👇",
-        label_visibility=st.session_state.visibility,
-        disabled=st.session_state.disabled,
-        placeholder=st.session_state.placeholder,
-    )
+   st.header("Topics")
+   st.image("https://static.streamlit.io/examples/dog.jpg")
 
-    if text_input:
-        st.write("You entered: ", text_input)
+with col3:
+   st.header("Content")
