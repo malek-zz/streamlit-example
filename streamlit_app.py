@@ -34,8 +34,7 @@ with col0:
    st.image(docx)
 with col1:
    st.subheader("Documents")
-   st.image(pdf)
-   st.text('Corporate Social Responsibility Policy.pdf')
+   st.(image(pdf),text('Corporate Social Responsibility Policy.pdf'))
    st.text('Standard Corporate Social Responsibility Policy.pdf')
    st.text('Activities in Corporate Social Responsibility Policy.pdf')
    st.text('Environment Protection Program Policy.pdf')
