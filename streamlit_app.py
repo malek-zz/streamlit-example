@@ -15,7 +15,6 @@ st.set_page_config(
 
 pdf = Image.open('pdf.png')
 docx = Image.open('docx.png')
-eye = Image.open('eye.jpg')
 
 files =['Corporate Social Responsibility Policy.pdf','Standard Corporate Social Responsibility Policy.pdf','Activities in Corporate Social Responsibility Policy.pdf',
        'Environment Protection Program Policy.pdf','Work Health and Safety Culture Policy.pdf','Client Complaint Management Policy.pdf',
@@ -34,5 +33,5 @@ for i in files:
     else:
         cols[0].image(docx)
     cols[1].write(i)
-    cols[2].image(eye)
+    cols[2].write('VIEW|ANALYSE')
     cols[3].write('x')
