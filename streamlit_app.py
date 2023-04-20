@@ -26,8 +26,11 @@ cols[1].write("Documents")
 cols[2].write('Topic')
 cols[3].write('Content')
 for i in files:
-    cols = st.columns([0.3,8,3,3])
-    cols[0].image(pdf)
+    cols = st.columns([0.3,5,2,2])
+    if (i.endswith('pdf'):        
+        cols[0].image(pdf)
+    else:
+        cols[0].image(docx)
     cols[1].write(i)
     cols[2].write('x')
     cols[3].write('x')
