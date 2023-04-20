@@ -15,7 +15,7 @@ st.set_page_config(
 
 pdf = Image.open('pdf.png')
 docx = Image.open('docx.png')
-eye = Image.open('eye.png')
+eye = Image.open('eye.jpg')
 
 files =['Corporate Social Responsibility Policy.pdf','Standard Corporate Social Responsibility Policy.pdf','Activities in Corporate Social Responsibility Policy.pdf',
        'Environment Protection Program Policy.pdf','Work Health and Safety Culture Policy.pdf','Client Complaint Management Policy.pdf',
