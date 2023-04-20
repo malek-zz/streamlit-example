@@ -3,9 +3,11 @@ from PIL import Image
 
 image = Image.open('pdf.png')
 
-st.image(image, caption='')
-col1, col2, col3 = st.columns(3)
 
+col0, col1, col2, col3 = st.columns([1,3,3,3],gap="small")
+
+with col0:
+   st.image(image, use_column_width='auto')
 with col1:
    st.subheader("Documents")
    st.text('This is some text. This is some text. This is some text.')
