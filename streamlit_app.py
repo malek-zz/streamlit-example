@@ -15,17 +15,18 @@ st.set_page_config(
 
 pdf = Image.open('pdf.png')
 docx = Image.open('docx.png')
+eye = Image.open('eye.png')
 
 files =['Corporate Social Responsibility Policy.pdf','Standard Corporate Social Responsibility Policy.pdf','Activities in Corporate Social Responsibility Policy.pdf',
        'Environment Protection Program Policy.pdf','Work Health and Safety Culture Policy.pdf','Client Complaint Management Policy.pdf',
        'Basic Complaint Management Policy.pdf','Anti-Harassement Policy and Procedure.pdf','General Information Technology Policy.pdf','Nondiscrimination Policy.pdf',
        'Air - Environment protection policy.docx']
-colsize = [0.3,5,2,2]
+colsize = [0.3,5,0.3,2]
 cols = st.columns(colsize)
 cols[0].write("")
 cols[1].write("Documents")
-cols[2].write('Topic')
-cols[3].write('Content')
+cols[2].write('')
+cols[3].write('Topic')
 for i in files:
     cols = st.columns(colsize)
     if i.endswith('pdf'):        
@@ -33,5 +34,5 @@ for i in files:
     else:
         cols[0].image(docx)
     cols[1].write(i)
-    cols[2].write('x')
+    cols[2].image(eye)
     cols[3].write('x')
