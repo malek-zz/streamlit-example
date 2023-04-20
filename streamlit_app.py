@@ -1,5 +1,9 @@
 import streamlit as st
+from PIL import Image
 
+image = Image.open('pdf.png')
+
+st.image(image, caption='')
 col1, col2, col3 = st.columns(3)
 
 with col1:
