@@ -20,12 +20,13 @@ files =['Corporate Social Responsibility Policy.pdf','Standard Corporate Social 
        'Environment Protection Program Policy.pdf','Work Health and Safety Culture Policy.pdf','Client Complaint Management Policy.pdf',
        'Basic Complaint Management Policy.pdf','Anti-Harassement Policy and Procedure.pdf','General Information Technology Policy.pdf','Nondiscrimination Policy.pdf',
        'Air - Environment protection policy.docx']
-colsize = [0.2,2,1,1]
+colsize = [0.2,2,1,1,4]
 cols = st.columns(colsize)
 cols[0].write("")
 cols[1].write("Documents")
 cols[2].write('')
 cols[3].write('Topic')
+cols[4].write('Content')
 for i in files:
     cols = st.columns(colsize)
     if i.endswith('pdf'):        
@@ -35,3 +36,4 @@ for i in files:
     cols[1].write(i)
     cols[2].write('VIEW|ANALYSE')
     cols[3].write('x')
+    cols[4].write('x')
