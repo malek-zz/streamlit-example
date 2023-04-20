@@ -16,39 +16,14 @@ st.set_page_config(
 pdf = Image.open('pdf.png')
 docx = Image.open('docx.png')
 
+files =['Corporate Social Responsibility Policy.pdf','Standard Corporate Social Responsibility Policy.pdf','Activities in Corporate Social Responsibility Policy.pdf',
+       'Environment Protection Program Policy.pdf','Work Health and Safety Culture Policy.pdf','Client Complaint Management Policy.pdf',
+       'Basic Complaint Management Policy.pdf','Anti-Harassement Policy and Procedure.pdf','General Information Technology Policy.pdf','Nondiscrimination Policy.pdf',
+       'Air - Environment protection policy.docx']
 
-col0, col1, col2, col3 = st.columns([0.3,8,3,3],gap="small")
-
-with col0:
-   st.subheader("__")
-   st.image(pdf)
-   st.image(pdf)
-   st.image(pdf)
-   st.image(pdf)
-   st.image(pdf)
-   st.image(pdf)
-   st.image(pdf)
-   st.image(pdf)
-   st.image(pdf)
-   st.image(pdf)
-   st.image(docx)
-with col1:
-   st.subheader("Documents")
-   st.(image(pdf)+text('Corporate Social Responsibility Policy.pdf'))
-   st.text('Standard Corporate Social Responsibility Policy.pdf')
-   st.text('Activities in Corporate Social Responsibility Policy.pdf')
-   st.text('Environment Protection Program Policy.pdf')
-   st.text('Work Health and Safety Culture Policy.pdf')
-   st.text('Client Complaint Management Policy.pdf')
-   st.text('Basic Complaint Management Policy.pdf')
-   st.text('Anti-Harassement Policy and Procedure.pdf')
-   st.text('General Information Technology Policy.pdf')
-   st.text('Nondiscrimination Policy.pdf')
-   st.text('Air - Environment protection policy.docx')
-   
-with col2:
-   st.subheader("Topics")
-   st.text('This is some text.')
-
-with col3:
-   st.subheader("Content")
+for i in range(1, 10):
+    cols = st.columns(4)
+    cols[0].write(files[i])
+    cols[1].write('Test')
+    cols[2].write('')
+    cols[3].write('x' * i)
