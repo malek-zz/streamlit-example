@@ -4,7 +4,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
    st.header("Documents")
-txt = st.text_area('Text to analyze', '''
+   txt = st.text_area('Text to analyze', '''
     It was the best of times, it was the worst of times, it was
     the age of wisdom, it was the age of foolishness, it was
     the epoch of belief, it was the epoch of incredulity, it
