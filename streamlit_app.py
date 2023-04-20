@@ -11,6 +11,9 @@ with col0:
    st.image(image, width=15)
 with col1:
    st.subheader("Documents")
+   text1 = 'This is some text1.'
+   text2 = 'This is some text2.'
+   st.table(text1,text2)
    st.text('This is some text. This is some text. This is some text.')
    st.text('This is some text.')
    st.text('This is some text.')
