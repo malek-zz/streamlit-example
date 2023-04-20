@@ -23,7 +23,7 @@ files =['Corporate Social Responsibility Policy.pdf','Standard Corporate Social 
 
 for i in files:
     cols = st.columns([0.3,8,3,3])
-    cols[0].write(image(pdf))
+    cols[0].write(pdf)
     cols[1].write(i)
     cols[2].write('x')
     cols[3].write('x')
