@@ -20,7 +20,7 @@ files =['Corporate Social Responsibility Policy.pdf','Standard Corporate Social 
        'Environment Protection Program Policy.pdf','Work Health and Safety Culture Policy.pdf','Client Complaint Management Policy.pdf',
        'Basic Complaint Management Policy.pdf','Anti-Harassement Policy and Procedure.pdf','General Information Technology Policy.pdf','Nondiscrimination Policy.pdf',
        'Air - Environment protection policy.docx']
-colsize = [0.3,3,1,2]
+colsize = [0.1,3,1,2]
 cols = st.columns(colsize)
 cols[0].write("")
 cols[1].write("Documents")
