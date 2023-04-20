@@ -21,9 +21,9 @@ files =['Corporate Social Responsibility Policy.pdf','Standard Corporate Social 
        'Basic Complaint Management Policy.pdf','Anti-Harassement Policy and Procedure.pdf','General Information Technology Policy.pdf','Nondiscrimination Policy.pdf',
        'Air - Environment protection policy.docx']
 
-for i in range(1, 10):
-    cols = st.columns(4)
-    cols[0].write(files[i])
+for i in files:
+    cols = st.columns(1,8,3,3)
+    cols[0].write(i)
     cols[1].write('Test')
     cols[2].write('')
-    cols[3].write('x' * i)
+    cols[3].write('x')
