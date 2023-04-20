@@ -7,7 +7,8 @@ image = Image.open('pdf.png')
 col0, col1, col2, col3 = st.columns([1,3,3,3],gap="small")
 
 with col0:
-   st.image(image, use_column_width='auto')
+   st.subheader("")
+   st.image(image, width=10)
 with col1:
    st.subheader("Documents")
    st.text('This is some text. This is some text. This is some text.')
