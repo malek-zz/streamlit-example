@@ -17,7 +17,7 @@ pdf = Image.open('pdf.png')
 docx = Image.open('docx.png')
 
 
-col0, col1, col2, col3 = st.columns([0.5,10,3,3],gap="small")
+col0, col1, col2, col3 = st.columns([0.3,10,3,3],gap="small")
 
 with col0:
    st.subheader("__")
