@@ -9,7 +9,7 @@ col0, col1, col2, col3 = st.columns([0.3,10,3,3],gap="small")
 
 with col0:
    st.subheader("__")
-   st.image(pdf, width=15)
+   st.image(pdf, use_column_width='auto')
    st.image(pdf, width=15)
    st.image(pdf, width=15)
    st.image(pdf, width=15)
