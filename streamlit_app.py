@@ -4,7 +4,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
    st.subheader("Documents")
-   st.text('This is some text.')
+   st.text('This is some text. This is some text. This is some text.')
    st.text('This is some text.')
    st.text('This is some text.')
    st.text('This is some text.')
