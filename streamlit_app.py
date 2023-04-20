@@ -8,7 +8,7 @@ docx = Image.open('docx.png')
 col0, col1, col2, col3 = st.columns([0.1,3,3,3],gap="small")
 
 with col0:
-   st.subheader(" ")
+   st.subheader("__")
    st.image(pdf, width=15)
    st.image(pdf, width=15)
    st.image(pdf, width=15)
