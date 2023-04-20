@@ -17,7 +17,7 @@ pdf = Image.open('pdf.png')
 docx = Image.open('docx.png')
 
 
-col0, col1, col2, col3 = st.columns([1,10,3,3],gap="small")
+col0, col1, col2, col3 = st.columns([0.3,10,3,3],gap="small")
 
 with col0:
    st.subheader("__")
@@ -31,7 +31,7 @@ with col0:
    st.image(pdf)
    st.image(pdf)
    st.image(pdf)
-   st.image(docx, use_column_width='auto')
+   st.image(docx)
 with col1:
    st.subheader("Documents")
    st.text('Corporate Social Responsibility Policy.pdf')
