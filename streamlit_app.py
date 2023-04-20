@@ -11,7 +11,7 @@ with col0:
    st.image(image, width=15)
 with col1:
    st.subheader("Documents")
-   st.text('This is some text. This is some text. This is some text.')
+   st.image(image, width=15) + st.text('This is some text. This is some text. This is some text.')
    st.text('This is some text.')
    st.text('This is some text.')
    st.text('This is some text.')
