@@ -23,7 +23,7 @@ files =['Corporate Social Responsibility Policy.pdf','Standard Corporate Social 
        'Basic Complaint Management Policy.pdf','Anti-Harassement Policy and Procedure.pdf','General Information Technology Policy.pdf','Nondiscrimination Policy.pdf',
        'Air - Environment protection policy.docx']
 
-colsize = [0.2,2,1,1,4]
+colsize = [0.2,2,1,3,4]
 cols = st.columns(colsize)
 cols[0].write("")
 cols[1].write("Documents")
@@ -39,7 +39,7 @@ for i in files:
     cols[1].write(i)
     cols[2].write('VIEW|ANALYSE')
     cols[3].multiselect(
-        'What are your favorite colors',
+        '',
         ['Green', 'Yellow', 'Red', 'Blue'],
         ['Yellow', 'Red'])
     cols[4].write('x')
