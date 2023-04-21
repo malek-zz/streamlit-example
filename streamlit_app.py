@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+from streamlit_pills import pills
 
 st.set_page_config(
     page_title="Demo App",
@@ -38,9 +39,6 @@ for i in files:
         cols[0].image(docx)
     cols[1].write(i)
     cols[2].write('VIEW|ANALYSE')
-    cols[3].multiselect(
-        '',
-        ['Green', 'Yellow', 'Red', 'Blue'],
-        ['Yellow', 'Red'])
+    cols[3].pills("Label", ["Option 1", "Option 2", "Option 3"], ["🍀", "🎈", "🌈"])
     cols[4].write('x')
 st.button('ANAYLSE')
