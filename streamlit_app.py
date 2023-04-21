@@ -44,12 +44,6 @@ for i in files:
         cols[0].image(docx)
     cols[1].write(i)
     cols[2].write('VIEW|ANALYSE')
-    cols[3].write(st_tags(
-        label='# Enter Keywords:',
-        text='Press enter to add more',
-        value=['Zero', 'One', 'Two'],
-        suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
-        maxtags=4,
-        key="aljnf"))
+    cols[3].write((keywords))
     cols[4].write('x')
 st.button('ANAYLSE')
