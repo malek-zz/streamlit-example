@@ -1,6 +1,5 @@
 import streamlit as st
 from PIL import Image
-from streamlit_pills import pills
 
 st.set_page_config(
     page_title="Demo App",
@@ -14,7 +13,6 @@ st.set_page_config(
     }
 )
 
-pills("Label", ["Option 1", "Option 2", "Option 3"], ["🍀", "🎈", "🌈"])
 
 pdf = Image.open('pdf.png')
 docx = Image.open('docx.png')
