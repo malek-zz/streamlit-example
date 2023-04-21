@@ -13,6 +13,16 @@ st.set_page_config(
     }
 )
 
+keywords = st_tags(
+    label='# Enter Keywords:',
+    text='Press enter to add more',
+    value=['Zero', 'One', 'Two'],
+    suggestions=['five', 'six', 'seven', 
+                 'eight', 'nine', 'three', 
+                 'eleven', 'ten', 'four'],
+    maxtags = 4,
+    key='1')
+
 pdf = Image.open('pdf.png')
 docx = Image.open('docx.png')
 
