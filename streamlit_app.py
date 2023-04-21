@@ -1,6 +1,5 @@
 import streamlit as st
 from PIL import Image
-from streamlit_tags import st_tags, st_tags_sidebar
 
 st.set_page_config(
     page_title="Demo App",
@@ -18,17 +17,12 @@ st.set_page_config(
 
 pdf = Image.open('pdf.png')
 docx = Image.open('docx.png')
-keywords = st_tags(
-    label='# Enter Keywords:',
-    text='Press enter to add more',
-    value=['Zero', 'One', 'Two'],
-    suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
-    maxtags=4,
-    key="aljnf")
+
 files =['Corporate Social Responsibility Policy.pdf','Standard Corporate Social Responsibility Policy.pdf','Activities in Corporate Social Responsibility Policy.pdf',
        'Environment Protection Program Policy.pdf','Work Health and Safety Culture Policy.pdf','Client Complaint Management Policy.pdf',
        'Basic Complaint Management Policy.pdf','Anti-Harassement Policy and Procedure.pdf','General Information Technology Policy.pdf','Nondiscrimination Policy.pdf',
        'Air - Environment protection policy.docx']
+
 colsize = [0.2,2,1,1,4]
 cols = st.columns(colsize)
 cols[0].write("")
@@ -44,6 +38,9 @@ for i in files:
         cols[0].image(docx)
     cols[1].write(i)
     cols[2].write('VIEW|ANALYSE')
-    cols[3].write((keywords))
+    cols[3].multiselect(
+        'What are your favorite colors',
+        ['Green', 'Yellow', 'Red', 'Blue'],
+        ['Yellow', 'Red'])
     cols[4].write('x')
 st.button('ANAYLSE')
