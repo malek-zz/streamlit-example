@@ -14,7 +14,7 @@ st.set_page_config(
     }
 )
 
-
+pills("Label", ["Option 1", "Option 2", "Option 3"], ["🍀", "🎈", "🌈"])
 
 pdf = Image.open('pdf.png')
 docx = Image.open('docx.png')
@@ -39,6 +39,6 @@ for i in files:
         cols[0].image(docx)
     cols[1].write(i)
     cols[2].write('VIEW|ANALYSE')
-    cols[3].pills("Label", ["Option 1", "Option 2", "Option 3"], ["🍀", "🎈", "🌈"])
+    cols[3].write('x')
     cols[4].write('x')
 st.button('ANAYLSE')
