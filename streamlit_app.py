@@ -23,7 +23,7 @@ keywords = st_tags(
     text='Press enter to add more',
     value=['Zero', 'One', 'Two'],
     suggestions=['five', 'six', 'seven', 'eight', 'nine', 'three', 'eleven', 'ten', 'four'],
-    maxtags=maxtags,
+    maxtags=4,
     key="aljnf")
 files =['Corporate Social Responsibility Policy.pdf','Standard Corporate Social Responsibility Policy.pdf','Activities in Corporate Social Responsibility Policy.pdf',
        'Environment Protection Program Policy.pdf','Work Health and Safety Culture Policy.pdf','Client Complaint Management Policy.pdf',
