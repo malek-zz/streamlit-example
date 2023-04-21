@@ -44,6 +44,6 @@ for i in files:
         cols[0].image(docx)
     cols[1].write(i)
     cols[2].write('VIEW|ANALYSE')
-    cols[3].type(keywords)
+    cols[3].write(keywords)
     cols[4].write('x')
 st.button('ANAYLSE')
