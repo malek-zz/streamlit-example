@@ -1,5 +1,9 @@
 import streamlit as st
 from PIL import Image
+from streamlit_pills import pills
+
+selected = pills("Label", ["Option 1", "Option 2", "Option 3"], ["🍀", "🎈", "🌈"])
+st.write(selected)
 
 st.set_page_config(
     page_title="Demo App",
