@@ -38,7 +38,7 @@ for i in files:
         cols[0].image(docx)
     cols[1].write(i)
     cols[2].write('VIEW|ANALYSE')
-    cols[3].keywords = st_tags(
+    cols[3].st_tags(
         label='# Enter Keywords:',
         text='',
         value=['Zero', 'One', 'Two'],
