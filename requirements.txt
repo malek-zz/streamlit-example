@@ -1,4 +1,4 @@
 altair
 pandas
 streamlit
-streamlit-pills
+streamlit-pills==0.3.0
