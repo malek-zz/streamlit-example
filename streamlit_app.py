@@ -14,15 +14,7 @@ st.set_page_config(
     }
 )
 
-keywords = st_tags(
-    label='# Enter Keywords:',
-    text='Press enter to add more',
-    value=['Zero', 'One', 'Two'],
-    suggestions=['five', 'six', 'seven', 
-                 'eight', 'nine', 'three', 
-                 'eleven', 'ten', 'four'],
-    maxtags = 4,
-    key='1')
+
 
 pdf = Image.open('pdf.png')
 docx = Image.open('docx.png')
@@ -46,6 +38,12 @@ for i in files:
         cols[0].image(docx)
     cols[1].write(i)
     cols[2].write('VIEW|ANALYSE')
-    cols[3].write('x')
+    cols[3].keywords = st_tags(
+        label='# Enter Keywords:',
+        text='',
+        value=['Zero', 'One', 'Two'],
+        suggestions=['five', 'six', 'seven'],
+        maxtags = 4,
+        key='1')
     cols[4].write('x')
 st.button('ANAYLSE')
